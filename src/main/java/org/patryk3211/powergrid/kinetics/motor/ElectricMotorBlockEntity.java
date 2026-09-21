@@ -47,12 +47,12 @@ public class ElectricMotorBlockEntity extends GeneratingKineticBlockEntity imple
     @Nullable
     protected ThermalBehaviour thermalBehaviour;
 
-    private ElectricWire coil;
+    protected ElectricWire coil;
 
-    private float generatedSpeed = 0;
+    protected float generatedSpeed = 0;
 
-    private float avgSpeed;
-    private float load;
+    protected float avgSpeed;
+    protected float load;
 
     public ElectricMotorBlockEntity(BlockEntityType<?> typeIn, BlockPos pos, BlockState state) {
         super(typeIn, pos, state);

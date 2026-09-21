@@ -36,16 +36,16 @@ import java.util.List;
 import java.util.Set;
 
 public class ContactorBlockEntity extends ElectricBlockEntity {
-    private ElectricWire coil;
+    protected ElectricWire coil;
 
     @Nullable
-    private SwitchedWire switch1;
-    private SwitchedWire switch2;
+    protected SwitchedWire switch1;
+    protected SwitchedWire switch2;
 
-    private int splitCooldown;
+    protected int splitCooldown;
 
-    private boolean state;
-    private final Set<ContactorBlockEntity> external = new HashSet<>();
+    protected boolean state;
+    protected final Set<ContactorBlockEntity> external = new HashSet<>();
 
     public ContactorBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
         super(type, pos, state);

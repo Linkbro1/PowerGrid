@@ -55,12 +55,12 @@ public class ConstantSpeedMotorBlockEntity extends GeneratingKineticBlockEntity 
 
     private SpeedScrollValueBehaviour scrollValue;
 
-    private ElectricWire coil;
+    protected ElectricWire coil;
 
-    private float generatedSU = 0;
+    protected float generatedSU = 0;
 
-    private float avgSpeed;
-    private float load;
+    protected float avgSpeed;
+    protected float load;
 
     public ConstantSpeedMotorBlockEntity(BlockEntityType<?> typeIn, BlockPos pos, BlockState state) {
         super(typeIn, pos, state);
